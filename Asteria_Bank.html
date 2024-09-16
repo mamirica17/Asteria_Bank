@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astéria Banque</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1000;
+        }
+        .header img {
+            max-width: 200px;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #003366;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 60px; /* Adjust for fixed navbar */
+        }
+        .slogan, .section-title {
+            font-size: 1.5em;
+            margin: 20px 0;
+            text-align: center;
+            color: #003366;
+        }
+        .section {
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        .team, .partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .team-member, .partner {
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+        .team-member:hover, .partner:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .team-member {
+            flex: 1 1 calc(33.333% - 20px);
+        }
+        .partner {
+            flex: 1 1 calc(25% - 20px);
+        }
+        .team-member h3, .partner h3 {
+            margin: 10px 0;
+            color: #003366;
+        }
+        .team-member p, .partner p {
+            color: #666666;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            color: #003366;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #003366;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .contact-form button:hover {
+            background-color: #002244;
+        }
+        .footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#about">À Propos</a>
+        <a href="#services">Services</a>
+        <a href="#team">Équipe</a>
+        <a href="#partners">Partenaires</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <header class="header">
+        <img src="https://via.placeholder.com/200x50?text=Ast%C3%A9ria+Banque" alt="Astéria Banque">
+        <h1>Astéria Banque</h1>
+    </header>
+    
+    <div class="container">
+        <div class="slogan">
+            "Propulser vos investissements vers de nouveaux horizons."
+        </div>
+
+        <section id="about" class="section">
+    <div class="section-title">À Propos de Nous</div>
+    <p>Astéria Banque est un acteur majeur dans le secteur des services financiers, offrant une gamme complète de solutions sur mesure pour répondre aux besoins variés de nos clients. Fondée avec la mission de redéfinir l'expérience bancaire, nous combinons expertise approfondie, technologie de pointe et un engagement sans faille envers l'éthique.</p>
+    
+    <p>Nous nous distinguons par notre approche innovante, qui allie les meilleures pratiques traditionnelles à des stratégies avant-gardistes. En tant que banque de premier plan, nous nous efforçons d’apporter une valeur ajoutée tangible à chacun de nos clients, en anticipant les tendances du marché et en fournissant des solutions financières adaptées aux besoins spécifiques de chaque individu ou entreprise.</p>
+    
+    <p>Notre équipe de plus de 200 professionnels qualifiés est dédiée à l’excellence et à la satisfaction client. Nous offrons des salaires compétitifs et des primes attractives basées sur la performance, en récompensant les contributions exceptionnelles au succès de notre institution. Cette politique de rémunération est conçue pour attirer et retenir les talents les plus brillants dans le domaine financier.</p>
+    
+    <p>Depuis quatre ans, nous avons connu une croissance positive soutenue, renforçant notre position de leader sur le marché et élargissant notre portée internationale. Cette réussite est le reflet de notre engagement à fournir des services de qualité et à construire des relations de confiance durables avec nos clients.</p>
+    
+    <p>Nous sommes également profondément engagés envers la responsabilité sociale et environnementale. Nous intégrons des pratiques durables dans notre fonctionnement quotidien et soutenons des initiatives qui favorisent un impact positif sur la communauté et l'environnement.</p>
+</section>
+>
+
+        <section id="services" class="section">
+            <div class="section-title">Nos Services</div>
+            <ul>
+                <li>Gestion de portefeuilles personnalisée</li>
+                <li>Conseil en investissements</li>
+                <li>Analyse des marchés financiers</li>
+                <li>Solutions de financement innovantes</li>
+                <li>Services de banque d'investissement</li>
+            </ul>
+        </section>
+
+        <section id="team" class="section">
+            <div class="section-title">L'Équipe</div>
+            <div class="team">
+                <div class="team-member">
+                    <h3>Sayah Shaineze</h3>
+                    <p>Expert en marchés financiers</p>
+                </div>
+                <div class="team-member">
+                    <h3>Landerer Diego</h3>
+                    <p>Gestionnaire de portefeuilles</p>
+                </div>
+                <div class="team-member">
+                    <h3>Mirica Marius-Daniel</h3>
+                    <p>Spécialiste en innovation digitale</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="section">
+            <div class="section-title">Nos Partenaires</div>
+            <div class="partners">
+                <div class="partner">
+                    <img src="https://via.placeholder.com/150?text=TechFinance" alt="TechFinance">
+                    <h3>TechFinance</h3>
+                    <p>Solutions innovantes pour la finance.</p>
+                </div>
+                <div class="partner">
+                    <img src="https://via.placeholder.com/150?text=InvestGlobal" alt="InvestGlobal">
+                    <h3>InvestGlobal</h3>
+                    <p>Expertise mondiale en investissement.</p>
+                </div>
+                <div class="partner">
+                    <img src="https://via.placeholder.com/150?text=SecureFunds" alt="SecureFunds">
+                    <h3>SecureFunds</h3>
+                    <p>Gestion sécurisée des fonds.</p>
+                </div>
+                <!-- Ajoutez d'autres partenaires ici si nécessaire -->
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-title">Comment Nous Contacter</div>
+            <div class="contact-form">
+                <h2>Contactez-Nous</h2>
+                <p>Email: contact@asteria-banque.com</p>
+                <p>Téléphone: +33 1 23 45 67 89</p>
+                <p>Adresse: 45 Avenue Montaigne, 75008 Paris, France
+</p>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        © 2024 Astéria Banque. Tous droits réservés.
+    </footer>
+</body>
+</html>
